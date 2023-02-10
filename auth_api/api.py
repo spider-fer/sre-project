@@ -27,7 +27,7 @@ def url_login():
     username = request.form['username']
     password = request.form['password']
     res = {
-        "token": login.generate_token(username, password)
+        "data": login.generate_token(username, password)
     }
     return make_response(jsonify(res))
 
