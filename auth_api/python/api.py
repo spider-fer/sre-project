@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask import jsonify
 from flask import request
 from methods import Token, Restricted
@@ -7,6 +7,9 @@ app = Flask(__name__)
 login = Token()
 protected = Restricted()
 
+@app.route("/home")
+def index():
+    return render_template("login.html")
 
 # Just a health check
 @app.route("/")
