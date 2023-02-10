@@ -1,7 +1,6 @@
 import hashlib
 import jwt
 import datetime
-import time
 from config import getconnection, SECRET_KEY
 # These functions need to be implemented
 class Token:
@@ -32,7 +31,6 @@ class Token:
 
         conn.close()
         return token
-
 
 class Restricted:
 
