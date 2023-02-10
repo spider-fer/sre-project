@@ -8,3 +8,5 @@ def getconnection():
     password = 'jOdznoyH6swQB9sTGdLUeeSrtejWkcw',
     db = 'bootcamp_tht',  
 )
+
+SECRET_KEY = 'my2w7wjd7yXF64FIADfJxNs1oupTGAuW'
